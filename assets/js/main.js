@@ -1,39 +1,86 @@
-const siteHeader = document.getElementById("site-header");
-const menuToggle = document.getElementById("menu-toggle");
-const navMenu = document.getElementById("nav-menu");
+// =========================
+// RAFIKI ZESPÓËL MAIN JS
+// =========================
+
+// PAGE REVEAL
+const revealElements = document.querySelectorAll(".reveal");
+
+if (revealElements.length > 0) {
+    const revealObserver = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                    observer.unobserve(entry.target);
+                }
+            });
+        },
+        {
+            threshold: 0.1
+        }
+    );
+
+    revealElements.forEach((element) => {
+        revealObserver.observe(element);
+    });
+}
 
 
 // =========================
-// NAVBAR SCROLL EFFECT
+// HEADER SCROLL
 // =========================
 
-window.addEventListener("scroll", () => {
-    if (window.scrollY > 50) {
-        siteHeader.classList.add("scrolled");
-    } else {
-        siteHeader.classList.remove("scrolled");
-    }
-});
+const siteHeader = document.querySelector(".site-header");
+
+if (siteHeader) {
+    const handleHeaderScroll = () => {
+        if (window.scrollY > 40) {
+            siteHeader.classList.add("scrolled");
+        } else {
+            siteHeader.classList.remove("scrolled");
+        }
+    };
+
+    handleHeaderScroll();
+
+    window.addEventListener("scroll", handleHeaderScroll, {
+        passive: true
+    });
+}
 
 
 // =========================
 // MOBILE MENU
 // =========================
 
-menuToggle.addEventListener("click", () => {
-    const isOpen = navMenu.classList.toggle("active");
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
 
-    menuToggle.setAttribute("aria-expanded", isOpen);
-});
+if (menuToggle && navLinks) {
 
+    menuToggle.addEventListener("click", () => {
 
-// =========================
-// CLOSE MOBILE MENU
-// =========================
+        const isOpen = navLinks.classList.toggle("nav-open");
 
-document.querySelectorAll(".nav-menu a").forEach((link) => {
-    link.addEventListener("click", () => {
-        navMenu.classList.remove("active");
-        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute(
+            "aria-expanded",
+            isOpen ? "true" : "false"
+        );
+
     });
-});
+
+    navLinks.querySelectorAll("a").forEach((link) => {
+
+        link.addEventListener("click", () => {
+
+            navLinks.classList.remove("nav-open");
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+        });
+
+    });
+}
