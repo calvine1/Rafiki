@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Discover upcoming and past Rafiki Zespół gatherings, worship experiences, conferences, youth events and ministry moments."
+    >
+
+    <title>Events | Rafiki Zespół</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="site-header" id="site-header">
+
+        <nav class="navbar container">
+
+            <a href="../index.html" class="brand">
+                <span class="brand-mark">R</span>
+                <span class="brand-name">
+                    RAFIKI <strong>ZESPÓËL</strong>
+                </span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-menu" id="nav-menu">
+
+                <a href="../index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="music.html">Music</a>
+                <a href="events.html" class="active">Events</a>
+                <a href="ministry.html">Ministry</a>
+                <a href="community.html">Community</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+
+                <a href="invite.html" class="nav-cta">
+                    Invite Rafiki
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main>
+
+
+        <!-- =========================
+             PAGE HERO
+        ========================== -->
+
+        <section class="inner-page-hero">
+
+            <div class="container">
+
+                <div class="inner-page-hero-content reveal">
+
+                    <span class="eyebrow">
+                        RAFIKI ZESPÓËL EVENTS
+                    </span>
+
+                    <h1>
+                        Gather. Worship. Connect.
+                    </h1>
+
+                    <p>
+                        From worship experiences and conferences to youth
+                        gatherings and special celebrations, every gathering
+                        is an opportunity to encounter God, connect with
+                        people and serve His purpose in our generation.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             UPCOMING EVENTS
+        ========================== -->
+
+        <section class="content-section">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="eyebrow">
+                        WHAT'S NEXT
+                    </span>
+
+                    <h2>
+                        Upcoming Events
+                    </h2>
+
+                    <p>
+                        Stay connected with what Rafiki is preparing and
+                        where we will be gathering next.
+                    </p>
+
+                </div>
+
+
+                <!-- =========================
+                     EVENT CARD TEMPLATE
+                     =========================
+
+                     TO ADD AN EVENT:
+
+                     1. Put the event poster inside:
+
+                        assets/images/events/
+
+                     Example:
+
+                        assets/images/events/event-1.jpg
+
+                     2. Change the image src below.
+
+                     3. Update the event title, date,
+                        venue, time and description.
+
+                     4. Later Django can automatically
+                        populate these same fields.
+                ========================== -->
+
+
+                <div class="events-grid">
+
+
+                    <!-- EVENT CARD -->
+
+                    <article class="event-card reveal">
+
+                        <div class="event-image">
+
+                            <!--
+                                EVENT POSTER
+
+                                Replace event-1.jpg with
+                                the actual poster filename.
+
+                                Example:
+                                ../assets/images/events/kingdom-realities.jpg
+                            -->
+
+                            <img
+                                src="../assets/images/events/event-1.jpg"
+                                alt="Rafiki Zespół event poster"
+                            >
+
+                            <span class="event-status">
+                                Upcoming
+                            </span>
+
+                        </div>
+
+
+                        <div class="event-content">
+
+                            <div class="event-date">
+
+                                <!-- Change these when adding an event -->
+
+                                <span>OCT</span>
+
+                                <strong>27</strong>
+
+                            </div>
+
+
+                            <div class="event-info">
+
+                                <!-- Event type -->
+
+                                <p class="event-type">
+                                    WORSHIP EXPERIENCE
+                                </p>
+
+
+                                <!-- Event title -->
+
+                                <h3>
+                                    The Next Rafiki Experience
+                                </h3>
+
+
+                                <!-- Short description -->
+
+                                <p>
+                                    A time of worship, fellowship,
+                                    encouragement and meaningful
+                                    conversations as we gather to
+                                    encounter God together.
+                                </p>
+
+
+                                <!-- Event details -->
+
+                                <div class="event-meta">
+
+                                    <span>
+                                        📍 Venue
+                                    </span>
+
+                                    <span>
+                                        🕒 Time
+                                    </span>
+
+                                </div>
+
+
+                                <!-- Event link -->
+
+                                <a
+                                    href="#"
+                                    class="text-link"
+                                >
+                                    View Event
+                                    <span>→</span>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+
+                <!-- =========================
+                     EMPTY STATE
+                     ========================== -->
+
+                <div class="events-empty reveal">
+
+                    <div class="events-empty-content">
+
+                        <span class="eyebrow">
+                            STAY CONNECTED
+                        </span>
+
+                        <h3>
+                            More Gatherings Are Coming.
+                        </h3>
+
+                        <p>
+                            We are preparing more opportunities for
+                            worship, fellowship, ministry and community.
+                            Stay connected with Rafiki so you don't miss
+                            what comes next.
+                        </p>
+
+                        <a
+                            href="contact.html"
+                            class="btn btn-primary"
+                        >
+                            Stay Connected
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             EVENT TYPES
+        ========================== -->
+
+        <section class="content-section section-soft">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="eyebrow">
+                        OUR GATHERINGS
+                    </span>
+
+                    <h2>
+                        More Than Events
+                    </h2>
+
+                    <p>
+                        Every gathering gives us an opportunity to worship,
+                        serve, connect and make an impact.
+                    </p>
+
+                </div>
+
+
+                <div class="cards-grid">
+
+
+                    <!-- Worship -->
+
+                    <article class="info-card reveal">
+
+                        <div class="info-card-icon">
+                            01
+                        </div>
+
+                        <h3>
+                            Worship Experiences
+                        </h3>
+
+                        <p>
+                            Creating spaces where people can worship,
+                            encounter God's presence and grow together.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Youth -->
+
+                    <article class="info-card reveal">
+
+                        <div class="info-card-icon">
+                            02
+                        </div>
+
+                        <h3>
+                            Youth Gatherings
+                        </h3>
+
+                        <p>
+                            Connecting young people through music,
+                            conversations, fellowship, purpose and faith.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Conferences -->
+
+                    <article class="info-card reveal">
+
+                        <div class="info-card-icon">
+                            03
+                        </div>
+
+                        <h3>
+                            Conferences & Revivals
+                        </h3>
+
+                        <p>
+                            Serving alongside churches and ministries
+                            through worship, music and spiritual
+                            encouragement.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Special Events -->
+
+                    <article class="info-card reveal">
+
+                        <div class="info-card-icon">
+                            04
+                        </div>
+
+                        <h3>
+                            Special Celebrations
+                        </h3>
+
+                        <p>
+                            Worshipping and celebrating with communities,
+                            families and individuals during meaningful
+                            moments.
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PAST EVENTS
+        ========================== -->
+
+        <section class="content-section">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="eyebrow">
+                        OUR JOURNEY
+                    </span>
+
+                    <h2>
+                        Past Events
+                    </h2>
+
+                    <p>
+                        Every gathering becomes part of the story God is
+                        writing through Rafiki.
+                    </p>
+
+                </div>
+
+
+                <!--
+                    We are intentionally not adding
+                    fake past events here.
+
+                    Once real events have happened,
+                    their cards can be added here using
+                    the same event-card structure above.
+
+                    Django will later manage this section
+                    automatically.
+                -->
+
+
+                <div class="events-empty reveal">
+
+                    <div class="events-empty-content">
+
+                        <span class="eyebrow">
+                            MEMORIES TO COME
+                        </span>
+
+                        <h3>
+                            Our Journey Is Still Unfolding.
+                        </h3>
+
+                        <p>
+                            More moments, testimonies and memories will
+                            be added here as we continue serving God's
+                            purpose in our generation.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             INVITE CTA
+        ========================== -->
+
+        <section class="cta-section">
+
+            <div class="container">
+
+                <div class="cta-content reveal">
+
+                    <span class="eyebrow">
+                        HAVE AN EVENT?
+                    </span>
+
+                    <h2>
+                        Invite Rafiki to Your Gathering
+                    </h2>
+
+                    <p>
+                        Whether it is a church service, conference,
+                        youth gathering, wedding, birthday, ceremony
+                        or special celebration, we would love to serve
+                        through music and ministry.
+                    </p>
+
+                    <a
+                        href="invite.html"
+                        class="btn btn-primary"
+                    >
+                        Invite Rafiki
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="site-footer">
+
+        <div class="container footer-grid">
+
+
+            <!-- Brand -->
+
+            <div class="footer-brand">
+
+                <a
+                    href="../index.html"
+                    class="brand"
+                >
+                    <span class="brand-mark">R</span>
+
+                    <span class="brand-name">
+                        RAFIKI <strong>ZESPÓËL</strong>
+                    </span>
+                </a>
+
+                <p>
+                    A gospel worship movement raising a generation
+                    through music, worship, fellowship and impact.
+                </p>
+
+            </div>
+
+
+            <!-- Explore -->
+
+            <div class="footer-column">
+
+                <h4>
+                    Explore
+                </h4>
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="music.html">
+                    Music
+                </a>
+
+                <a href="events.html">
+                    Events
+                </a>
+
+                <a href="ministry.html">
+                    Ministry
+                </a>
+
+                <a href="community.html">
+                    Community
+                </a>
+
+            </div>
+
+
+            <!-- Connect -->
+
+            <div class="footer-column">
+
+                <h4>
+                    Connect
+                </h4>
+
+                <a href="gallery.html">
+                    Gallery
+                </a>
+
+                <a href="blog.html">
+                    Blog
+                </a>
+
+                <a href="volunteer.html">
+                    Volunteer
+                </a>
+
+                <a href="partner.html">
+                    Partner
+                </a>
+
+                <a href="support.html">
+                    Support the Vision
+                </a>
+
+                <a href="invite.html">
+                    Invite Rafiki
+                </a>
+
+            </div>
+
+
+            <!-- Contact -->
+
+            <div class="footer-column">
+
+                <h4>
+                    Contact
+                </h4>
+
+                <a href="contact.html">
+                    Contact Us
+                </a>
+
+                <a href="mailto:rafikizespol24@gmail.com">
+                    Email Us
+                </a>
+
+                <a
+                    href="https://wa.me/254798562612"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    WhatsApp
+                </a>
+
+                <a href="privacy-policy.html">
+                    Privacy Policy
+                </a>
+
+                <a href="terms.html">
+                    Terms
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- Footer Bottom -->
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    © 2026 Rafiki Zespół. All rights reserved.
+                </p>
+
+                <p>
+                    Raising a Generation. Carrying His Presence.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Main JavaScript -->
+
+    <script src="../assets/js/main.js"></script>
+
+</body>
+</html>
